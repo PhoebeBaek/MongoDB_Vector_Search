@@ -13,7 +13,7 @@ from langchain_community.embeddings import BedrockEmbeddings
 from langchain.chains import RetrievalQA
 
 #local이면 aws credential도 추가필요
-os.environ['mdb_password'] = 'Admin1234'
+os.environ['mdb_password'] = 'a'
 
 CONNECTION_STRING = f"mongodb+srv://sojeong:{os.environ['mdb_password']}@cluster0.ac173wv.mongodb.net/"
 client = MongoClient(CONNECTION_STRING)
